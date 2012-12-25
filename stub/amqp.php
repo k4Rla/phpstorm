@@ -506,7 +506,7 @@ class AMQPExchange {
      * @throw AMQPChannelException    Throws an exception if the channel is not open.
      * @throw AMQPConnectionException Throws an exception if the connection to the broker was lost
      */
-    public function delete($flags = AMQP::AMQP_NOPARAM) {
+    public function delete($flags = AMQP_NOPARAM) {
     }
 
     /**
@@ -582,7 +582,7 @@ class AMQPExchange {
      * @throw AMQPChannelException    Throws an exception if the channel is not open.
      * @throw AMQPConnectionException Throws an exception if the connection to the broker was lost
      */
-    public function publish($message, $routing_key, $flags = AMQP::AMQP_NOPARAM, array $attributes = array()) {
+    public function publish($message, $routing_key, $flags = AMQP_NOPARAM, array $attributes = array()) {
     }
 
     /**
@@ -654,7 +654,7 @@ class AMQPQueue {
      * @throw AMQPChannelException    Throws an exception if the channel is not open.
      * @throw AMQPConnectionException Throws an exception if the connection to the broker was lost
      */
-    public function ack($delivery_tag, $flags = AMQP::AMQP_NOPARAM) {
+    public function ack($delivery_tag, $flags = AMQP_NOPARAM) {
     }
 
     /**
@@ -708,7 +708,7 @@ class AMQPQueue {
      * @throw AMQPChannelException    Throws an exception if the channel is not open.
      * @throw AMQPConnectionException Throws an exception if the connection to the broker was lost
      */
-    public function consume($callback, $flags = AMQP::AMQP_NOPARAM) {
+    public function consume($callback, $flags = AMQP_NOPARAM) {
     }
 
     /**
@@ -798,7 +798,7 @@ class AMQPQueue {
      * @throw AMQPChannelException    Throws an exception if the channel is not open.
      * @throw AMQPConnectionException Throws an exception if the connection to the broker was lost
      */
-    public function nack($delivery_tag, $flags = AMQP::AMQP_NOPARAM) {
+    public function nack($delivery_tag, $flags = AMQP_NOPARAM) {
     }
 
     /**
